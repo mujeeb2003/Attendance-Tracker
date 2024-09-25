@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.calendar-summary-container {
+  display: flex;
+  gap: 20px;
+  flex-grow: 1;
+  align-items: flex-start;
+}
+
+.calendar-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 620px;
+  height: 500px;
+  overflow: auto;
+  margin-right: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.calendar-header button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-header button:hover {
+  background-color: #0056b3;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day-cell {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.day-cell:hover {
+  background-color: #f0f0f0;
+}
+
+.hours {
+  font-size: 12px;
+  color: #555;
+}
+
+.summary-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.week-summary {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  flex-grow: 1;
+  width: 200px;
+}
+
+.week-summary.met {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.week-summary.not-met {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.leftover-hours {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #cce5ff;
+  color: #004085;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.weekly-summary {
+  flex-grow: 1;
+}
