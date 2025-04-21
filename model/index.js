@@ -1,10 +1,11 @@
 import mongoose from "mongoose";
 import { Attendance } from './Attendance.js'
 import { Faculty } from "./Faculty.js";
-
+import dotenv from "dotenv";
+dotenv.config();
 
 (async () => {
-    await mongoose.connect(`mongodb://127.0.0.1:27017/ZabCMS`);
+    await mongoose.connect(process.env.MONGO_URI);
 })();
 
 export const db = {
